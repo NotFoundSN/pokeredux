@@ -1,10 +1,13 @@
 import {Card} from 'antd';
-import Meta from 'antd/lib/card/Meta';
 import {StarOutlined} from '@ant-design/icons';
+import './PokemonCard.css';
 
-const PokemonCard = ({name}) => {
-    return (<Card title={name} cover={<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png' alt={name} extra={<StarOutlined/>} />}>
-        <Meta description='normal, hada'/>
+const atributo = ['normal', 'hada','acero'];
+const PokemonCard = ({name, image, types}) => {
+    return (<Card title={name} cover={<img src={image} alt={name} extra={<StarOutlined/>} />}>
+        <div className='tipos'>
+            {types.map((tipe)=> {return <div className={`tipo ${tipe.type.name}`} key={`${name}-${tipe.type.name}`} >{tipe.type.name}</div>})}
+        </div>
     </Card>);
 };
 

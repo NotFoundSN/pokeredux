@@ -16,11 +16,15 @@ import PokemonList from './components/PokemonList';
 function App() {
   const pokemons = useSelector(state => state.pokemons);
   const dispatch = useDispatch();
-  console.log(pokemons);
+  //console.log(pokemons);
   useEffect(() => {
-    let lista = api.pokemon.getPokemons();
-    Promise.all([lista])
-      .then(([lista]) => dispatch(setPokemons(lista)));
+    const fetchPokemonos = async () => {
+      const lista = await api.pokemon.getPokemons();
+      let pokemonDetaileds = await Promise.all(lista.map(pokemon => api.pokemon.getDetail(pokemon)))
+      dispatch(setPokemons(pokemonDetaileds))
+    }
+
+    fetchPokemonos();
   }, [])
 
   return (

@@ -1,24 +1,24 @@
 :root {
   --fondo: #FDF5E6;
-  /*
+  --hada:	#FFB0FF;
+  --normal:#DDCCAA;
+/*
   Tipo acero:#CCCCCC	
-Tipo agua:	#B0E2FF	
-Tipo bicho:	#99CC33
-Tipo dragón:	#AB82FF	
-Tipo eléctrico:	#FFD700	
-Tipo fantasma:	#778899
-Tipo fuego:	#FF7F00
-Tipo hada:	#FFB0FF	
-Tipo hielo:	#ADD8E6	
-Tipo lucha:	#FF6A6A	
-Tipo normal:#DDCCAA	
-Tipo planta:	#99FF66	
-Tipo psíquico:	#FFB5C5	
-Tipo roca:	#CD853F	
-Tipo siniestro:	#A9A9A9	
-Tipo tierra	:#DEB887	
-Tipo veneno	:#CC88BB	
-Tipo volador	:#BAAAFF	
+  Tipo agua:	#B0E2FF	
+  Tipo bicho:	#99CC33
+  Tipo dragón:	#AB82FF	
+  Tipo eléctrico:	#FFD700	
+  Tipo fantasma:	#778899
+  Tipo fuego:	#FF7F00
+  Tipo hielo:	#ADD8E6	
+  Tipo lucha:	#FF6A6A	
+  Tipo planta:	#99FF66	
+  Tipo psíquico:	#FFB5C5	
+  Tipo roca:	#CD853F	
+  Tipo siniestro:	#A9A9A9	
+  Tipo tierra	:#DEB887	
+  Tipo veneno	:#CC88BB	
+  Tipo volador	:#BAAAFF	
 */
 }
 

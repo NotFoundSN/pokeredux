@@ -4,18 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import pokemonReducer from './reducers/pokemons';
+import {logger} from './middleware/index';
 import { Provider } from 'react-redux';
-import { legacy_createStore as createStore } from 'redux';
+import { compose, applyMiddleware, legacy_createStore as createStore } from 'redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const store = createStore(pokemonReducer)
+const composedEnchancers = compose(window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+  applyMiddleware(logger));
+
+const store = createStore(pokemonReducer, composedEnchancers)
 root.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
     </Provider>
-    
+
   </React.StrictMode>
 );
 

@@ -10,11 +10,18 @@ const config = axios.create({
 const consulta = {
     pokemon: {
         getPokemons: async () => {
-            let pokemones = await config.get('/pokemon/?limit=151')
+            let pokemones = await config.get('/pokemon/?limit=151&offset=151')
             .then((res) =>{return res.data.results})
             .catch((error) =>{console.log(error)})
             return pokemones;
         },
+        getDetail: async (pokemon) => {
+            let link = pokemon.url.slice(25);
+            let pokeDetail = await config.get(link)
+            .then((res) =>{return res.data})
+            .catch((error) =>{console.log(error)})
+            return pokeDetail;
+        }    
     },
 }
 

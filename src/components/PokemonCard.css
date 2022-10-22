@@ -1,0 +1,109 @@
+:root {
+    --acero: #CCCCCC;
+    --agua: #B0E2FF;
+    --bicho: #99CC33;
+    --dragon: #AB82FF;
+    --electrico: #FFD700;
+    --fantasma: #778899;
+    --fuego: #FF7F00;
+    --hada: #FFB0FF;
+    --hielo: #ADD8E6;
+    --lucha: #FF6A6A;
+    --normal: #DDCCAA;
+    --planta: #99FF66;
+    --psiquico: #FFB5C5;
+    --roca: #CD853F;
+    --siniestro: #A9A9A9;
+    --tierra: #DEB887;
+    --veneno: #CC88BB;
+    --volador: #BAAAFF;
+}
+
+.tipos {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.tipo {
+    width: 100px;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+/*  ********************
+    * Colores de tipos *
+    ********************/
+
+.bug {
+    background: var(--bicho);
+}
+
+.dragon {
+    background: var(--dragon);
+}
+
+.electric {
+    background: var(--electrico);
+}
+
+.fairy {
+    background: var(--hada);
+}
+
+.fighting {
+    background: var(--lucha);
+}
+
+.fire {
+    background: var(--fuego);
+}
+
+.flying {
+    background: var(--volador);
+}
+
+.ghost {
+    background: var(--fantasma);
+}
+
+.grass {
+    background: var(--planta);
+}
+
+.ground {
+    background: var(--tierra);
+}
+
+.ice {
+    background: var(--hielo);
+}
+
+.normal {
+    background: var(--normal);
+}
+
+.poison {
+    background: var(--veneno);
+}
+
+.psychic {
+    background: var(--psiquico);
+}
+
+.rock {
+    background: var(--roca);
+}
+
+.dark {
+    background: var(--siniestro);
+}
+
+.steel {
+    background: var(--acero);
+}
+
+.water {
+    background: var(--agua);
+}
