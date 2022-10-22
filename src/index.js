@@ -10,7 +10,7 @@ import { compose, applyMiddleware, legacy_createStore as createStore } from 'red
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const composedEnchancers = compose(window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+const composedEnchancers = compose(/*window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),*/
   applyMiddleware(logger));
 
 const store = createStore(pokemonReducer, composedEnchancers)
