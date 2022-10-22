@@ -29,13 +29,13 @@ function App() {
 
   return (
     <div className="App">
-      <Row justify='center' gutter={[8, 8]} className='Espacios'>
+      <Row justify='center' className='Espacios'>
         <Col xs={22} sm={16} md={12}><img className='logo' src={logo} alt='pokeredux' /></Col>
       </Row>
-      <Row justify='center' gutter={[8, 8]} className='Espacios'>
+      <Row justify='center' className='Espacios'>
         <Col xs={22} sm={16} md={12}><Searcher /></Col>
       </Row>
-      <Row justify='center' gutter={[10, 10]} className='Espacios'>
+      <Row justify='center' className='Espacios'>
         <PokemonList pokemons={pokemons} />
       </Row>
     </div>

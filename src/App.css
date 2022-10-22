@@ -1,30 +1,11 @@
 :root {
-  --fondo: #FDF5E6;
-  --hada:	#FFB0FF;
-  --normal:#DDCCAA;
-/*
-  Tipo acero:#CCCCCC	
-  Tipo agua:	#B0E2FF	
-  Tipo bicho:	#99CC33
-  Tipo dragón:	#AB82FF	
-  Tipo eléctrico:	#FFD700	
-  Tipo fantasma:	#778899
-  Tipo fuego:	#FF7F00
-  Tipo hielo:	#ADD8E6	
-  Tipo lucha:	#FF6A6A	
-  Tipo planta:	#99FF66	
-  Tipo psíquico:	#FFB5C5	
-  Tipo roca:	#CD853F	
-  Tipo siniestro:	#A9A9A9	
-  Tipo tierra	:#DEB887	
-  Tipo veneno	:#CC88BB	
-  Tipo volador	:#BAAAFF	
-*/
+  --fondo: #c2d9ad;
 }
 
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -37,9 +18,15 @@ body {
 }
 
 .logo {
-  width: 100%;
+  width: 90%;
+  filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.6));
 }
 
 .Espacios {
   padding-bottom: 2rem;
+}
+
+.colPoke {
+  margin: 0.25rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
 }

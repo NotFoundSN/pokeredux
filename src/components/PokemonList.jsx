@@ -9,7 +9,7 @@ const PokemonList = ({pokemons}) => {
         <React.Fragment>
                 {pokemons.map((pokemon) => { 
                     //console.log(pokemon);
-                    return <Col xs={22} sm={11} md={7} lg={5} key={`${pokemon.name}-col`}><PokemonCard pokemon={pokemon} key={`${pokemon.name}-card`}/></Col> 
+                    return <Col className="colPoke" xs={22} sm={11} md={7} lg={5} key={`${pokemon.name}-col`}><PokemonCard pokemon={pokemon} key={`${pokemon.name}-card`}/></Col> 
                     })}
         </React.Fragment>
     );
