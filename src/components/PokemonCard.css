@@ -34,16 +34,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 2.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     background: rgba(0, 0, 0, 0.089);
 }
 
-.cardName .cardNumber {
-    font-size: 2.5rem;
-    font-weight: 100;
+.cardName {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.cardNumber {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .cardImg {
@@ -53,38 +57,23 @@
 
 .pokeImg {
     width: 75%;
+    filter: drop-shadow(0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.6));
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .tipos {
     display: flex;
     flex-direction: row;
     align-content: space-between;
     justify-content: space-evenly;
-    
 }
 
 .tipo {
     width: 100px;
     text-align: center;
+    text-justify: center;
     border-radius: 1rem;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 0.1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
 /*  ********************
