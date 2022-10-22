@@ -1,14 +1,20 @@
-import {Card} from 'antd';
-import {StarOutlined} from '@ant-design/icons';
+//import {Card} from 'antd';
+//import {StarOutlined} from '@ant-design/icons';
 import './PokemonCard.css';
 
-const atributo = ['normal', 'hada','acero'];
-const PokemonCard = ({name, image, types}) => {
-    return (<Card title={name} cover={<img src={image} alt={name} extra={<StarOutlined/>} />}>
-        <div className='tipos'>
-            {types.map((tipe)=> {return <div className={`tipo ${tipe.type.name}`} key={`${name}-${tipe.type.name}`} >{tipe.type.name}</div>})}
+const PokemonCard = ({pokemon}) => {
+    let name = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+    return (
+        <div className='card'>
+            <div className='cardTitle'><b className='cardName'>{name}</b><b className='cardNumber'>{pokemon.id}</b></div>
+            <div className='cardImg'>
+                <img src={pokemon.sprites.front_default} alt={pokemon.name} className='pokeImg'/>
+            </div>
+            <div className='tipos'>
+                {pokemon.types.map((tipe)=> {return <div className={`tipo ${tipe.type.name}`} key={`${pokemon.name}-${tipe.type.name}`} ><b>{tipe.type.name}</b></div>})}
+            </div>
         </div>
-    </Card>);
+    )
 };
 
 export default PokemonCard;
