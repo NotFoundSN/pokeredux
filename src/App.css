@@ -2,7 +2,7 @@
   --fondo: #c2d9ad;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -29,4 +29,28 @@ body {
 .colPoke {
   margin: 0.25rem;
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.2rem;
+  color: white;
+}
+
+select {
+  background-color: #c42a2a;
+  width: 100%;
+  border: none;
+  font-weight: 700;
+  appearance: button;
+  text-align: center;
+  padding: 0.5rem;
+  outline: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+select option {
+  padding: 30px;
 }

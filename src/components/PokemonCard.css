@@ -38,7 +38,8 @@
     padding-right: 2.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background: rgba(0, 0, 0, 0.089);
+    background: rgba(0, 0, 0, 0.080);
+    box-shadow: 0rem 0.5rem 2rem 0rem rgba(0, 0, 0, 0.2);
 }
 
 .cardName {
